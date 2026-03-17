@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CrestWeb - Premium Websites for Modern Businesses</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Floating WhatsApp -->
+    <!-- Two WhatsApp Buttons -->
+<div class="whatsapp-container">
+    <!-- Primary WhatsApp (Original) -->
+    <a href="https://wa.me/919141752165?text=Hi%20CrestWeb!%20I%27m%20interested%20in%20your%20website%20services." 
+       class="whatsapp-float primary" target="_blank" title="+91 9141752165">
+        <i class="fab fa-whatsapp"></i> <span>1</span>
+    </a>
+    
+    <!-- Secondary WhatsApp (New) -->
+    <a href="https://wa.me/919731442252?text=Hi%20CrestWeb!%20I%27m%20interested%20in%20your%20website%20services." 
+       class="whatsapp-float secondary" target="_blank" title="+91 9731442252">
+        <i class="fab fa-whatsapp"></i> <span>2</span>
+    </a>
+</div>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <img src="{{ url_for('static', filename='images/crestweb_logo.png') }}" alt="CrestWeb" class="logo">
+            </div>
+            <div class="nav-menu" id="nav-menu">
+                <a href="#home" class="nav-link">Home</a>
+                <a href="#benefits" class="nav-link">Benefits</a>
+                <a href="#services" class="nav-link">Services</a>
+                <a href="#pricing" class="nav-link">Pricing</a>
+                <a href="#portfolio" class="nav-link">Portfolio</a>
+                <a href="#contact" class="nav-link">Contact</a>
+            </div>
+            <div class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1 class="hero-headline">Build a Powerful Online Presence for Your Business</h1>
+            <p class="hero-subtext">We create modern, fast, and mobile-friendly websites that help businesses attract more customers and grow online.</p>
+            <div class="hero-buttons">
+                <a href="#contact" class="btn btn-primary">Get Free Quote</a>
+                <a href="#pricing" class="btn btn-secondary">View Pricing</a>
+            </div>
+        </div>
+        <div class="locations">
+            <span><i class="fas fa-map-marker-alt"></i> Bangalore & Mangalore</span>
+        </div>
+    </section>
+
+    <!-- Client Benefits -->
+    <section id="benefits" class="benefits">
+        <div class="container">
+            <h2 class="section-title">Why Your Business Needs a Website</h2>
+            <div class="benefits-grid">
+                <div class="benefit-card">
+                    <i class="fas fa-users"></i>
+                    <h3>Attract More Customers</h3>
+                    <p>Reach thousands of potential customers searching online every day.</p>
+                </div>
+                <div class="benefit-card">
+                    <i class="fas fa-shield-alt"></i>
+                    <h3>Build Trust & Credibility</h3>
+                    <p>Professional website makes your business look established and trustworthy.</p>
+                </div>
+                <div class="benefit-card">
+                    <i class="fas fa-chart-line"></i>
+                    <h3>Increase Visibility</h3>
+                    <p>Rank higher on Google and get found by local customers.</p>
+                </div>
+                <div class="benefit-card">
+                    <i class="fas fa-clock"></i>
+                    <h3>Work 24/7</h3>
+                    <p>Your website generates leads even when you're sleeping.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services -->
+    <section id="services" class="services">
+        <div class="container">
+            <h2 class="section-title">Our Services</h2>
+            <div class="services-grid">
+                <div class="service-card">
+                    <i class="fas fa-globe"></i>
+                    <h3>Business Website Development</h3>
+                    <p>Complete business websites with modern design and functionality.</p>
+                </div>
+                <div class="service-card">
+                    <i class="fas fa-laptop"></i>
+                    <h3>Landing Page Development</h3>
+                    <p>High-converting landing pages for your campaigns and offers.</p>
+                </div>
+                <div class="service-card">
+                    <i class="fas fa-sync-alt"></i>
+                    <h3>Website Redesign</h3>
+                    <p>Transform your old website into a modern, fast platform.</p>
+                </div>
+                <div class="service-card">
+                    <i class="fas fa-tools"></i>
+                    <h3>Website Maintenance</h3>
+                    <p>Ongoing support, updates, and performance optimization.</p>
+                </div>
+                <div class="service-card">
+                    <i class="fas fa-search"></i>
+                    <h3>SEO Setup</h3>
+                    <p>Optimize your website to rank higher on Google.</p>
+                </div>
+                <div class="service-card">
+                    <i class="fas fa-mobile-alt"></i>
+                    <h3>Mobile-Optimized Websites</h3>
+                    <p>Perfect responsive design for all devices.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pricing -->
+    <section id="pricing" class="pricing">
+        <div class="container">
+            <h2 class="section-title">Choose Your Plan</h2>
+            <div class="pricing-grid">
+                <div class="pricing-card">
+                    <div class="plan-header">
+                        <h3>Starter</h3>
+                        <div class="price">₹6999</div>
+                    </div>
+                    <ul>
+                        <li>5 Page Website</li>
+                        <li>Mobile Responsive</li>
+                        <li>Contact Form</li>
+                        <li>Google Maps</li>
+                        <li>Basic SEO</li>
+                        <li>Delivery: 15 Days</li>
+                    </ul>
+                    <a href="#contact" class="btn btn-primary">Get Started</a>
+                </div>
+                <div class="pricing-card popular">
+                    <div class="popular-badge">Most Popular</div>
+                    <div class="plan-header">
+                        <h3>Business</h3>
+                        <div class="price">₹14999</div>
+                    </div>
+                    <ul>
+                        <li>10 Page Website</li>
+                        <li>WhatsApp Integration</li>
+                        <li>Speed Optimization</li>
+                        <li>Google Analytics</li>
+                        <li>SEO Optimization</li>
+                        <li>Delivery: 20 Days</li>
+                    </ul>
+                    <a href="#contact" class="btn btn-primary">Get Started</a>
+                </div>
+                <div class="pricing-card">
+                    <div class="plan-header">
+                        <h3>Premium</h3>
+                        <div class="price">₹29999</div>
+                    </div>
+                    <ul>
+                        <li>Custom Design</li>
+                        <li>Advanced SEO</li>
+                        <li>Lead Generation</li>
+                        <li>Performance Opt.</li>
+                        <li>Priority Support</li>
+                        <li>Delivery: 30 Days</li>
+                    </ul>
+                    <a href="#contact" class="btn btn-primary">Get Started</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio -->
+    <section id="portfolio" class="portfolio">
+        <div class="container">
+            <h2 class="section-title">Our Work</h2>
+            <div class="portfolio-grid">
+                <div class="portfolio-item">
+                    <img src="{{ url_for('static', filename='portfolio/restaurant.jpg') }}" alt="Restaurant">
+                    <div class="portfolio-overlay">
+                        <h3>Restaurant Website</h3>
+                    </div>
+                </div>
+                <div class="portfolio-item">
+                    <img src="{{ url_for('static', filename='portfolio/salon.jpg') }}" alt="Salon">
+                    <div class="portfolio-overlay">
+                        <h3>Salon Website</h3>
+                    </div>
+                </div>
+                <div class="portfolio-item">
+                    <img src="{{ url_for('static', filename='portfolio/gym.jpg') }}" alt="Gym">
+                    <div class="portfolio-overlay">
+                        <h3>Gym Website</h3>
+                    </div>
+                </div>
+                <div class="portfolio-item">
+                    <img src="{{ url_for('static', filename='portfolio/clinic.jpg') }}" alt="Clinic">
+                    <div class="portfolio-overlay">
+                        <h3>Clinic Website</h3>
+                    </div>
+                </div>
+                <div class="portfolio-item">
+                    <img src="{{ url_for('static', filename='portfolio/business.jpg') }}" alt="Business">
+                    <div class="portfolio-overlay">
+                        <h3>Small Business</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Process -->
+    <section class="process">
+        <div class="container">
+            <h2 class="section-title">Our Simple Process</h2>
+            <div class="process-grid">
+                <div class="process-step">
+                    <div class="step-number">1</div>
+                    <h3>Requirement Discussion</h3>
+                    <p>We understand your business and design requirements.</p>
+                </div>
+                <div class="process-step">
+                    <div class="step-number">2</div>
+                    <h3>Design & Development</h3>
+                    <p>We create stunning designs and develop your website.</p>
+                </div>
+                <div class="process-step">
+                    <div class="step-number">3</div>
+                    <h3>Review & Feedback</h3>
+                    <p>You review and provide feedback for final touches.</p>
+                </div>
+                <div class="process-step">
+                    <div class="step-number">4</div>
+                    <h3>Website Launch</h3>
+                    <p>Your website goes live and starts working for you!</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section class="testimonials">
+        <div class="container">
+            <h2 class="section-title">What Our Clients Say</h2>
+            <div class="testimonials-grid">
+                <div class="testimonial">
+                    <div class="stars">★★★★★</div>
+                    <p>"CrestWeb delivered an amazing website in just 3 days! Professional, fast, and exactly what we needed."</p>
+                    <div class="author">Ravi Sharma - Restaurant Owner</div>
+                </div>
+                <div class="testimonial">
+                    <div class="stars">★★★★★</div>
+                    <p>"Best investment for our salon business. More bookings than ever thanks to the new website!"</p>
+                    <div class="author">Priya K - Salon Owner</div>
+                </div>
+                <div class="testimonial">
+                    <div class="stars">★★★★★</div>
+                    <p>"Outstanding service and results. Our gym website looks professional and gets great leads."</p>
+                    <div class="author">Amit Patel - Gym Owner</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Achievements -->
+    <section class="achievements">
+        <div class="container">
+            <div class="achievements-grid">
+                <div class="achievement">
+                    <div class="number">50+</div>
+                    <div class="label">Websites Created</div>
+                </div>
+                <div class="achievement">
+                    <div class="number">100%</div>
+                    <div class="label">Client Satisfaction</div>
+                </div>
+                <div class="achievement">
+                    <div class="number">10 to 20 Days</div>
+                    <div class="label">Fast Delivery</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Lead Generation Form -->
+    <section id="contact" class="contact-form">
+        <div class="container">
+            <h2 class="section-title">Get Your Free Website Quote</h2>
+            <p class="section-subtitle">Fill the form below and we'll get back to you within 24 hours</p>
+            <form id="quote-form" class="quote-form">
+                <div class="form-group">
+                    <input type="text" id="name" placeholder="Your Name" required>
+                </div>
+                <div class="form-group">
+                    <input type="tel" id="phone" placeholder="Phone Number" required>
+                </div>
+                <div class="form-group">
+                    <input type="email" id="email" placeholder="Email Address" required>
+                </div>
+                <div class="form-group">
+                    <input type="text" id="business" placeholder="Business Name" required>
+                </div>
+                <div class="form-group">
+                    <textarea id="message" placeholder="Tell us about your requirements..." rows="5"></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary">Get Free Quote</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact">
+        <div class="container">
+            <h2 class="section-title">Contact Us</h2>
+            <div class="contact-grid">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <i class="fas fa-phone"></i>
+                        <div>
+                            <h3>Phone / WhatsApp</h3>
+                            <a href="tel:+919141752165">+91 9141752165</a>
+                            <h3>Phone / WhatsApp</h3>
+                            <a href="tel:+919731442252">+91 9731442252</a>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <div>
+                            <h3>Email</h3>
+                            <a href="mailto:crest.web@gmail.com">crest.web@gmail.com</a>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <div>
+                            <h3>Locations</h3>
+                            <p>Bangalore & Mangalore<br>Karnataka, India</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="contact-map">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15574.039468873745!2d77.59412131475768!3d12.97159869077539!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae1499b5f...Bangalore!5e0!3m2!1sen!2sin!4v1630000000000" 
+                            width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <img src="{{ url_for('static', filename='images/crestweb_logo.png') }}" alt="CrestWeb" class="footer-logo">
+                    <p>Premium Websites for Modern Businesses</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#services">Services</a></li>
+                        <li><a href="#pricing">Pricing</a></li>
+                        <li><a href="#portfolio">Portfolio</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Contact Info</h3>
+                    <p><i class="fas fa-phone"></i> +91 9141752165</p>
+                    <p><i class="fas fa-phone"></i> +91 9731442252</p>
+                    <p><i class="fas fa-envelope"></i> crest.web@gmail.com</p>
+                    <p><i class="fas fa-map-marker-alt"></i> Bangalore & Mangalore</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 CrestWeb – All Rights Reserved</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="{{ url_for('static', filename='js/main.js') }}"></script>
+</body>
+</html>
