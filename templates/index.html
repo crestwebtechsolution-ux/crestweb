@@ -7,6 +7,70 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CrestWeb - Professional Web Solutions</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CrestWeb - Professional Web Solutions</title>
+    
+    <!-- BOOTSTRAP CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    
+    <style>
+
+    .menu-toggle { 
+        display: none; 
+        cursor: pointer; 
+        padding: 10px;
+    }
+    .nav-menu { 
+        display: flex; 
+        list-style: none;
+    }
+    @media (max-width: 768px) {
+        .menu-toggle { display: block !important; }
+        .nav-menu { 
+            display: none; 
+            flex-direction: column; 
+            position: absolute; 
+            top: 100%; 
+            left: 0; 
+            width: 100%; 
+            background: #1e3a8a;
+        }
+        .nav-menu.active { 
+            display: flex !important; 
+        }
+        .nav-menu li { 
+            padding: 15px; 
+            border-bottom: 1px solid #fff;
+        }
+    }
+    /* LOGO SIZE FIX */
+.navbar-brand img, 
+.nav-logo img {
+    max-height: 45px !important;  /* Perfect navbar size */
+    max-width: 150px !important;
+    height: auto;
+    width: auto;
+    object-fit: contain;
+}
+
+/* RESPONSIVE LOGO */
+@media (max-width: 768px) {
+    .nav-logo img {
+        max-height: 40px !important;
+        max-width: 120px !important;
+    }
+}
+ .navbar-brand img { max-height: 45px !important; max-width: 140px !important; height: auto; object-fit: contain; }
+        @media (max-width: 768px) { .navbar-brand img { max-height: 35px !important; max-width: 110px !important; } }
+    </style>
+    
+    <!-- Your existing CSS links -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
 </head>
 <body>
     <!-- Floating WhatsApp -->
@@ -26,26 +90,50 @@
 </div>
 
     <!-- Navigation -->
-    <nav class="navbar">
-        <div class="nav-container">
-            <div class="nav-logo">
-                <img src="{{ url_for('static', filename='images/crestweb_logo.png') }}" alt="CrestWeb" class="logo">
-            </div>
-            <div class="nav-menu" id="nav-menu">
-                <a href="#home" class="nav-link">Home</a>
-                <a href="#benefits" class="nav-link">Benefits</a>
-                <a href="#services" class="nav-link">Services</a>
-                <a href="#pricing" class="nav-link">Pricing</a>
-                <a href="#portfolio" class="nav-link">Portfolio</a>
-                <a href="#contact" class="nav-link">Contact</a>
-            </div>
-            <div class="hamburger" id="hamburger">
-                <span></span>
-                <span></span>
-                <span></span>
-            </div>
+    <!-- PERFECT BOOTSTRAP NAVBAR -->
+<nav class="navbar navbar-expand-lg navbar-dark" style="background: linear-gradient(135deg, #1e3a8a 0%, #3b82f6 100%);">
+    <div class="container-fluid">
+        <!-- LOGO -->
+        <a class="navbar-brand" href="#home">
+            <img src="{{ url_for('static', filename='images/logo.png') }}" 
+                 alt="CrestWeb" 
+                 style="max-height: 45px; max-width: 140px; height: auto;">
+        </a>
+
+        <!-- HAMBURGER BUTTON -->
+        <button class="navbar-toggler" 
+                type="button" 
+                data-bs-toggle="collapse" 
+                data-bs-target="#navbarNav" 
+                aria-controls="navbarNav" 
+                aria-expanded="false" 
+                aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <!-- MENU ITEMS -->
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item"><a class="nav-link px-3" href="#home">Home</a></li>
+                <li class="nav-item"><a class="nav-link px-3" href="#services">Services</a></li>
+                <li class="nav-item"><a class="nav-link px-3" href="#portfolio">Portfolio</a></li>
+                <li class="nav-item"><a class="nav-link px-3" href="#pricing">Pricing</a></li>
+                <li class="nav-item"><a class="nav-link px-3" href="#contact">Contact</a></li>
+            </ul>
         </div>
-    </nav>
+    </div>
+</nav>
+
+<!-- ADD THIS JAVASCRIPT (bottom of file, before </body>) -->
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+<!-- YOUR CUSTOM JS (optional) -->
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+    console.log('✅ Bootstrap + Menu Ready!');
+});
+</script>
 
     <!-- Hero Section -->
     <section id="home" class="hero">
@@ -388,9 +476,14 @@
                 </div>
             </div>
             <div class="footer-bottom">
+
                 <p>&copy; 2026 CrestWeb – All Rights Reserved</p>
             </div>
         </div>
+        <a href="/admin-login" class="btn btn-outline-light btn-lg ms-2">
+    🔐 View Leads
+</a>
+
     </footer>
 
     <script src="{{ url_for('static', filename='js/main.js') }}"></script>
